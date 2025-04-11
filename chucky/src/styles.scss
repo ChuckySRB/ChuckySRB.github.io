@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Colors */
+:root {
+  --color-primary: #25726d;
+  --color-primary-background: #143237; /* Wolf-Teel */
+  --color-primary-light: #5bbca1;
+  --color-dark: #111a22; /* Dark-Blue */
+  --color-white: #eff2f1;
+  --color-black: #060707;
+  --color-grey-dark: #2c3130;
+}
+
+.title{
+  color: var(--color-black);
+  margin-bottom: 4rem;
+}
+
+.text{
+  color: var(--color-white)
+}
+.text2{
+  color: var(--color-dark)
+}
+
+
+
+body{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.wolf{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2rem;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
