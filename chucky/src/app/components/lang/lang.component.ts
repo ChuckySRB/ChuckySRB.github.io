@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-lang',
@@ -11,9 +12,12 @@ export class LangComponent implements OnInit {
   supportedLanguages: string[] = [];
   currentLang: string = 'en';
 
+  constructor(private cookieService: CookieService) {
+  }
+
   ngOnInit(): void {
     this.loadSupportedLanguages();
-    this.currentLang = localStorage.getItem('chucky-lang') || 'en';
+    this.currentLang = this.cookieService.get('chucky-lang') || 'en';
   }
 
   loadSupportedLanguages(): void {
@@ -22,7 +26,7 @@ export class LangComponent implements OnInit {
 
   changeLanguage(lang: string): void {
     this.currentLang = lang;
-    localStorage.setItem('chucky-lang', lang);
+    this.cookieService.set('chucky-lang', lang);
     window.location.reload();
   }
 }
