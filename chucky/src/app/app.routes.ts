@@ -10,6 +10,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/buckit/buckit.component').then(m => m.BuckitComponent)
     },
     {
+        path: 'buckit/privacy-policy',
+        loadComponent: () => import('./pages/buckit/privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent)
+    },
+    {
         path: '**',
         redirectTo: ''
     }

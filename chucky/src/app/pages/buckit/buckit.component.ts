@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DEFAULT_LANG, getTranslations, LANG_TAG } from '../../utils/lang';
 
 @Component({
   selector: 'app-buckit',
@@ -6,6 +7,19 @@ import { Component } from '@angular/core';
   templateUrl: './buckit.component.html',
   styleUrl: './buckit.component.scss'
 })
-export class BuckitComponent {
+export class BuckitComponent implements OnInit {
+  translations: any;
+  lang: string = 'en';
 
+  constructor() {
+    
+  }
+
+  ngOnInit(): void {
+    this.lang = localStorage.getItem(LANG_TAG) || DEFAULT_LANG;
+    getTranslations(this.lang).then(translations => {
+      this.translations = translations;
+    });
+  }
+  
 }
