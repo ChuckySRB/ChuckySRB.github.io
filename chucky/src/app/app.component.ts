@@ -1,10 +1,11 @@
 import { afterRender, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LangComponent } from './components/lang/lang.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { DEFAULT_LANG, getTranslations, LANG_TAG } from './utils/lang';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LangComponent],
+  imports: [RouterOutlet, LangComponent, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

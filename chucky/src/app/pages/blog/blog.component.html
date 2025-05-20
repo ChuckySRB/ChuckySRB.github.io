@@ -1,0 +1,12 @@
+<div class="blog-content">
+  <div class="pixel-card blog-card">
+    <h1 class="blog-title">Blogs</h1>
+    <div class="blog-list">
+      <div *ngFor="let post of blogPosts" class="blog-post pixel-card">
+        <h2>{{ post.title }}</h2>
+        <div class="blog-date">{{ post.date }}</div>
+        <div [innerHTML]="post.html"></div>
+      </div>
+    </div>
+  </div>
+</div> 

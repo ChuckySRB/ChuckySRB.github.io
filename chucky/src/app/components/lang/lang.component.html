@@ -3,7 +3,7 @@
     *ngFor="let lang of supportedLanguages" 
     (click)="changeLanguage(lang)"
     [class.active]="currentLang === lang"
-    class="lang-button">
+    class="pixel-btn lang-button">
     {{ lang | uppercase }}
   </button>
 </div>
