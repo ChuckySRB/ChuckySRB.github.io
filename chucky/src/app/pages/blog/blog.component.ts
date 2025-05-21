@@ -34,11 +34,12 @@ export class BlogComponent implements OnInit {
     ];
     const posts: BlogPost[] = [];
     for (const file of blogFiles) {
-      const res = await fetch(`/blogs/${file}`);
+      const res = await fetch(`/assets/blogs/${file}`);
       const text = await res.text();
-      const post: BlogPost = this.parseMarkdown(text);
+      const post: BlogPost = this.parseMarkdown(text)
+      const parsed_content = await marked.parse(post.content as string);
       // Explicitly ensure post.content is a string
-      post.html = this.sanitizer.bypassSecurityTrustHtml(marked.parse(post.content as string));
+      post.html = this.sanitizer.bypassSecurityTrustHtml(parsed_content);
       posts.push(post);
     }
     // Sort by date descending
