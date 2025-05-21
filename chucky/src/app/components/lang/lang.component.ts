@@ -21,7 +21,7 @@ export class LangComponent implements OnInit {
   }
 
   loadSupportedLanguages(): void {
-    this.supportedLanguages = ['en', 'srb'];
+    this.supportedLanguages = ['en', 'срб'];
   }
 
   changeLanguage(lang: string): void {

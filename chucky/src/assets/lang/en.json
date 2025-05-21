@@ -6,6 +6,18 @@
             "description": "Here are some of my projects:"
         }
     },
+    "card":{
+        "name": "Časlav Petronić",
+        "title": "Software Engineer",
+        "download": "Download CV",
+        "contact": "Contact"
+    },
+    "navbar":{
+        "home": "Home",
+        "about": "About Me",
+        "projects": "Projects",
+        "blogs": "Blogs"
+    },
     "buckit": {
         "title": "Buckit",
         "description": "A simple task management application",

@@ -2,11 +2,12 @@
 
     <div class="main-content">
         <div class="pixel-card main-card">
-            <h1 class="main-title">Your Name</h1>
-            <div class="main-avatar"></div>
+            <img src="assets/Chucky.png" alt="profile" class="main-avatar-img" />
+            <h1 class="main-title">{{ translations.card?.name }}</h1>
+            <h2 class="main-subtitle">{{ translations.card?.title }}</h2>
             <div class="main-actions">
-                <a href="#" class="pixel-btn" download>Download CV</a>
-                <a href="#" class="pixel-btn">Contact Me</a>
+                <a href="assets/Caslav_Petornic_CV.pdf" class="pixel-btn" download>{{ translations.card?.download }}</a>
+                <a href="#contact" class="pixel-btn">{{ translations.card?.contact }}</a>
             </div>
         </div>
     </div>
