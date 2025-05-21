@@ -34,7 +34,8 @@
         "viewOnGitHub": "View on GitHub"
     },
     "footer": {
-        "description": "© 2025 Časlav Petronić (ChuckySRB)",
-        "software": "Created with Angular"
+        "description": "2025 Časlav Petronić (ChuckySRB)",
+        "software": "Created with Angular",
+        "credit": "Cover art by "
     }
 }
