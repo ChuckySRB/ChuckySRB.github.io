@@ -33,6 +33,16 @@
         "technologies": "Коришћене технологије",
         "viewOnGitHub": "Погледај на GitHub-у"
     },
+    "about": {
+        "title": "О мени",
+        "bio": "Ја сам Часлав Петронић (ChuckySRB), софтверски инженер из Србије"
+    },
+    "projects": {
+        "title": "Пројекти"
+    },
+    "blog": {
+        "title": "Блогови"
+    },
     "footer":{
         "description": "2025 Часлав Петронић (ChuckySRB)",
         "software": "Направљено у Angular",

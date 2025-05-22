@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule, NgFor } from '@angular/common';
 import { marked } from 'marked';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DEFAULT_LANG, getTranslations, LANG_TAG } from '../../utils/lang';
 
 interface BlogPost {
   title: string;
@@ -19,18 +20,24 @@ interface BlogPost {
 })
 export class BlogComponent implements OnInit {
   blogPosts: BlogPost[] = [];
+  translations: any = {};
+  lang: string = 'en';
 
   constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit(): void {
     this.loadBlogPosts();
+    this.lang = localStorage.getItem(LANG_TAG) || DEFAULT_LANG;
+    getTranslations(this.lang).then(translations => {
+      this.translations = translations;
+    });
   }
 
   async loadBlogPosts() {
     // List of blog markdown files (in a real app, automate this or fetch from API)
     const blogFiles = [
-      'first-pixel-blog.md',
-      'second-pixel-blog.md'
+      'aptamers_ai.md',
+      'windows_customization.md'
     ];
     const posts: BlogPost[] = [];
     for (const file of blogFiles) {

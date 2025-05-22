@@ -44,3 +44,17 @@
   margin: 0 auto;
   max-width: 600px;
 } 
+
+.gitlink {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.gitlink a {
+  color: var(--color-white);
+  
+}
+
+.gitlink a:hover {
+  color: var(--color-pixel-blue);
+}
