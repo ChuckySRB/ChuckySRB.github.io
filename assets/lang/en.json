@@ -6,6 +6,18 @@
             "description": "Here are some of my projects:"
         }
     },
+    "card":{
+        "name": "Časlav Petronić",
+        "title": "Software Engineer",
+        "download": "Download CV",
+        "contact": "Contact"
+    },
+    "navbar":{
+        "home": "Home",
+        "about": "About Me",
+        "projects": "Projects",
+        "blogs": "Blogs"
+    },
     "buckit": {
         "title": "Buckit",
         "description": "A simple task management application",
@@ -21,8 +33,19 @@
         "technologies": "Technologies Used",
         "viewOnGitHub": "View on GitHub"
     },
+    "about": {
+        "title": "About Me",
+        "bio": "I am Časlav Petronić (ChuckySRB), a software engineer from Serbia"
+    },
+    "projects": {
+        "title": "Projects"
+    },
+    "blog": {
+        "title": "Blogs"
+    },
     "footer": {
-        "description": "© 2025 Časlav Petronić (ChuckySRB)",
-        "software": "Created with Angular"
+        "description": "2025 Časlav Petronić (ChuckySRB)",
+        "software": "Created with Angular",
+        "credit": "Cover art by "
     }
 }
