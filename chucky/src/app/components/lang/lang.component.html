@@ -1,9 +1,16 @@
 <div class="language-selector">
-  <button 
-    *ngFor="let lang of supportedLanguages" 
-    (click)="changeLanguage(lang)"
-    [class.active]="currentLang === lang"
-    class="pixel-btn lang-button">
-    {{ lang | uppercase }}
-  </button>
+  <div class="lang-holder lang-left"
+    (click)="changeLanguage('en')"
+    [class.active]="currentLang === 'en'">
+    <div class="text eng">ENG</div>
+  </div>
+  <div class="lang-midle">
+    <img class="icon langauge-icon" src="assets/icons/language.png"/>
+  </div>
+  <div class="lang-holder lang-right"
+  (click)="changeLanguage('срб')"
+  [class.active]="currentLang === 'срб'">
+    <div class="text srb">СРБ</div>
+  </div>
 </div>
+

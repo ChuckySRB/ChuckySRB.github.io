@@ -1,29 +1,61 @@
 .language-selector {
   position: fixed;
-  top: 1rem;
-  left: 1rem;
+  top: 2rem;
+  left: 4rem;
   z-index: 1100;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 0.5rem;
+  // gap: 0.5rem;
   margin: 0;
+  color: var(--color-pixel-white);
+  font-family: 'Tiny5', 'PixelifySans', monospace;
+  font-size: 1.5rem;
+  background-color: var(--color-pixel-dark);
+  border: 5px solid var(--color-pixel-yellow);
+  border-radius: 18px;
+  box-shadow: 0 0 0 4px var(--color-black), 0 8px 32px 0 rgba(0,0,0,0.5);
+  padding: 5px
 }
 
-.lang-button.pixel-btn {
-  min-width: 48px;
-  font-size: 1.1rem;
-  padding: 0.5rem 1.2rem;
-  border-radius: 0.25rem;
-  border: 3px solid var(--color-black);
-  background: var(--color-pixel-blue);
-  color: var(--color-white);
-  box-shadow: 2px 2px 0 var(--color-black);
-  transition: background 0.1s, color 0.1s;
+
+.lang-midle {
+  max-height: 25px;
+  display: flex;
+  justify-content: center;
+
 }
-.lang-button.pixel-btn.active, .lang-button.pixel-btn:hover {
-  background: var(--color-pixel-yellow);
-  color: var(--color-black);
-  border: 3px solid var(--color-pixel-purple);
+
+.langauge-icon {
+  justify-self: center;
+  align-self: center;
+  height: 45px;
+  width: 45px;
 }
+
+.eng{
+  text-align: right;
+}
+
+.lang-right {
+  padding-right: 10px;
+}
+
+.lang-left {
+  padding-left: 10px;
+}
+
+.lang-holder {
+  border-radius: 8px;
+  padding: 5px 10px;
+  color: var(--color-pixel-white);
+}
+
+
+
+.lang-holder.active, .lang-holder:hover {
+  color: var(--color-pixel-green);
+ 
+} 
+

@@ -16,18 +16,26 @@
 
 /* Colors */
 :root {
-  --color-primary: #25726d;
-  --color-primary-background: #143237; /* Wolf-Teel */
-  --color-primary-light: #5bbca1;
-  --color-dark: #111a22; /* Dark-Blue */
-  --color-white: #eff2f1;
-  --color-black: #060707;
-  --color-grey-dark: #2c3130;
-  --color-accent: #7ec850;
-  --color-pixel-yellow: #ffe066;
+  --color-pixel-dark:  #133236; // Main Backround Color
+  --color-pixel-yellow: #ffe066; // Main Border and some text Color
+
   --color-pixel-purple: #a259a2;
   --color-pixel-blue: #3a7ca5;
   --color-pixel-green: #6ab04c;
+  
+
+  --color-white: #eff2f1;
+  --color-black: #060707;
+  --color-pixel-white: #f6f9e3; // White for text
+  --color-pixel-black: #0e1b1b; // Black for borders and some text
+  
+  --color-pixel-grey: #7b859c; // Window Header
+  --color-pixel-teel: #35a580; // Welcome text background
+
+  --color-pixel-line: #6d6069; // Line details and border
+  --color-pixel-text-1: #b4a794; // Letter text light
+  --color-pixel-text-2: #9f9484; // letter text email or highlights
+  --color-pixel-text-3: #877c6c; // Letter text header
 }
 
 .title{
@@ -35,9 +43,9 @@
   margin-bottom: 4rem;
 }
 
-.text{
-  color: var(--color-white)
-}
+// .text{
+//   color: var(--color-white)
+// }
 .text2{
   color: var(--color-dark)
 }
@@ -45,7 +53,7 @@
 body {
   background: url('assets/chilling_pixels.png') no-repeat center center fixed;
   background-size: cover;
-  color: var(--color-white);
+  color: var(--color-pixel-white);
   font-family: 'Tiny5', 'PixelifySans', monospace;
   margin: 0;
   min-height: 100vh;
@@ -117,3 +125,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   scrollbar-width: thin;
   scrollbar-color: var(--color-pixel-yellow) var(--color-primary-background);
 }
+
+// Old Colors
+
+// --color-primary: #25726d;
+// --color-primary-background: #143237; /* Wolf-Teel */
+// --color-primary-light: #5bbca1;
+// --color-dark: #111a22; /* Dark-Blue */
+// --color-white: #eff2f1;
+// --color-black: #060707;
+// --color-grey-dark: #2c3130;
+// --color-accent: #7ec850;
