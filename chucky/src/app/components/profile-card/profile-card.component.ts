@@ -1,14 +1,13 @@
 import { afterRender, Component, Input, OnInit } from '@angular/core';
 import { getTranslations, DEFAULT_LANG, LANG_TAG } from '../../utils/lang';
-import { ProfileCardComponent } from "../../components/profile-card/profile-card.component";
 
 @Component({
-  selector: 'app-home',
-  imports: [ProfileCardComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  selector: 'app-profile-card',
+  imports: [],
+  templateUrl: './profile-card.component.html',
+  styleUrl: './profile-card.component.scss'
 })
-export class HomeComponent implements OnInit {
+export class ProfileCardComponent implements OnInit {
   translations: any = {};
   lang: string = 'en';
   
@@ -21,6 +20,5 @@ export class HomeComponent implements OnInit {
       this.translations = translations;
     });
   }
-
 
 }
