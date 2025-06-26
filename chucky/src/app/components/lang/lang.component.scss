@@ -1,7 +1,7 @@
 .language-selector {
-  position: fixed;
-  top: 2rem;
-  left: 4rem;
+  // position: fixed;
+  // top: 2rem;
+  // left: 4rem;
   z-index: 1100;
   display: flex;
   flex-direction: row;
@@ -14,7 +14,7 @@
   font-size: 1.5rem;
   background-color: var(--color-pixel-dark);
   border: 5px solid var(--color-pixel-yellow);
-  border-radius: 18px;
+  border-radius: 1.5rem;
   box-shadow: 0 0 0 4px var(--color-black), 0 8px 32px 0 rgba(0,0,0,0.5);
   padding: 5px
 }
